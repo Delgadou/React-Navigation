@@ -8,10 +8,10 @@ const Tab = createBottomTabNavigator()
 
 export default props => {
     return(
-        <Tab.Navigator tabBarOptions={{
-            activeTintColor: 'red',
-            inactiveTintColor: 'blue',
-            labelStyle: { fontSize: 30 }
+        <Tab.Navigator screenOptions={{
+            tabBarActiveTintColor: 'red',
+            tabBarInactiveTintColor: 'blue',
+            tabBarLabelStyle: { fontSize: 30 }
         }}>
             <Tab.Screen name="Screen0" component={Screen0}/>
             <Tab.Screen name="Screen1" component={Screen1}/>
