@@ -25,7 +25,7 @@ export default props =>(
         </Stack.Screen>
         <Stack.Screen name="Screen2">
             {props => (
-                <StepStack {...props} back >
+                <StepStack {...props} back next="Screen2">
                     <Screen2/>
                 </StepStack>
             )}
